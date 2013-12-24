@@ -1,0 +1,13 @@
+# Routes
+# This file defines all application routes (Higher priority routes first)
+# ~~~~
+
+# Home page
+GET     /                           		controllers.Application.index()
+GET     /alocarDisciplina/:period/:name	controllers.Application.selectDiscipline(period: Integer, name: String)
+GET     /desalocarDisciplina/:name			controllers.Application.removeDiscipline(name: String)
+GET		/reiniciar							controllers.Application.restart()
+
+
+# Map static resources from the /public folder to the /assets URL path
+GET     /assets/*file               controllers.Assets.at(path="/public", file)

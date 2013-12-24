@@ -1,0 +1,93 @@
+@(periodos: List[Periodo])
+
+@import helper._ 
+
+@main("Planejamento de Curso") {
+<script>
+    $(function() {
+        $(".disciplina").draggable({
+            revert: "invalid"
+        });
+
+        $( ".coluna" ).droppable({
+            drop: function( event, ui ) {
+                var disciplina = ui.draggable[0].id;
+            	var periodo = event.target.id.replace('periodo_', '');
+            	
+                location.href = '/alocarDisciplina/' + periodo + '/' + disciplina;
+            }
+        });
+
+        $( "#disciplinas" ).droppable({
+            drop: function( event, ui ) {
+                var disciplina = ui.draggable[0].id;
+            	
+                location.href = '/desalocarDisciplina/' + disciplina;
+            }
+        });
+    });
+</script>
+
+<header class="navbar navbar-inverse navbar-fixed-top bs-docs-nav"
+    role="banner">
+    <div class="navbar-inverse">
+        <div class="container">
+            <div class="navbar-header" >
+                <a href="/" class="navbar-brand">Home</a>
+            </div>
+            <nav class="collapse navbar-collapse bs-navbar-collapse"
+                role="navigation">
+                  <ul class="nav navbar-nav">
+                    <li><a href="">Ajuda</a></li>
+                    <li><a href="">Dicas</a></li>
+                    <li><a href="">Overview</a></li>
+                    <li><a href="">Colabore</a></li>
+                </ul>  
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="/reiniciar">Reiniciar</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div> 
+</header> 
+
+<div class="wrapper" style="height: 100%;">
+    <br/>    
+    <div id="colunas">
+        <div class="titulo">
+            <nome-principal>PLANO DE CURSO</nome-principal>
+        </div>
+        @for((periodo, i) <- periodos.zipWithIndex) {
+            <div id="periodo_@(i + 1)" class="coluna">
+            <nome-periodo>Período @(1 + periodos.indexOf(periodo))</nome-periodo>
+            @for(disciplina <- periodo.getDisciplines()){
+                <div class="disciplina" id="@disciplina.getName()">
+                    <nome>@disciplina.getName()</nome><br/>
+                    <descricao>@disciplina.getCredits() créditos</descricao>
+                </div>
+            }
+            <h3> @periodo.getCredits() créditos </h3> <br>
+            @if(periodo.lessCreditsRequired()) {
+                Abaixo dos créditos mínimos.
+            }
+            </div>
+            
+        }
+
+    </div>
+    <br/>    
+    <div id="disciplinas">
+        <div class="titulo">
+            <nome-principal>DISCIPLINAS OFERTADAS</nome-principal>
+        </div>
+        @for(disciplina <- Application.gradePlanning.getDisciplinasOfertadas()) {
+            @if(disciplina.getPeriod() == -1) {
+                <div class="disciplina float-left" id="@disciplina.getName()">
+                    <nome>@disciplina.getName()</nome><br/>
+                    <descricao>@disciplina.getCredits() créditos</descricao>
+                </div>
+            }
+        }
+    </div>
+</div>
+}
