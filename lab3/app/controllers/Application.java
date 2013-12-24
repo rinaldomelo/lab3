@@ -5,6 +5,7 @@ import play.mvc.Result;
 import views.html.index;
 public class Application extends Controller {
 
+	// Sistema de Planejamento da Graduação
 	public static Sistema gradeDePlanejamento = new Sistema();
 	
     public static Result index() {
