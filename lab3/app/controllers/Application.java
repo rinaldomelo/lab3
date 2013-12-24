@@ -3,29 +3,28 @@ package controllers;
 import play.mvc.Controller;
 import play.mvc.Result;
 import views.html.index;
-
 public class Application extends Controller {
 
-	public static Sistema gradePlanning = new Sistema();
+	public static Sistema gradeDePlanejamento = new Sistema();
 	
     public static Result index() {
-        return ok(index.render(gradePlanning.getPeriods()));
+        return ok(index.render(gradeDePlanejamento.getPeriodos()));
     }
     
-    public static Result selectDiscipline(Integer periodo, String nomeDaDisciplina) {
-    	gradePlanning.selectDiscipline(periodo, nomeDaDisciplina);
+    public static Result disciplinaSelecionada(Integer periodo, String nomeDaDisciplina) {
+    	gradeDePlanejamento.selecionarDisciplina(periodo, nomeDaDisciplina);
     	
     	return redirect("/");
     }
     
-    public static Result removeDiscipline(String nomeDaDisciplina) {
-    	gradePlanning.removeDiscipline(nomeDaDisciplina);
+    public static Result removerDisciplina(String nomeDaDisciplina) {
+    	gradeDePlanejamento.removerDisciplina(nomeDaDisciplina);
     	
     	return redirect("/");
     }
 
-    public static Result restart() {
-    	gradePlanning = new Sistema();
+    public static Result recomecar() {
+    	gradeDePlanejamento = new Sistema();
     	
     	return redirect("/");
     }

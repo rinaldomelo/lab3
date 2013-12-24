@@ -60,14 +60,14 @@
         @for((periodo, i) <- periodos.zipWithIndex) {
             <div id="periodo_@(i + 1)" class="coluna">
             <nome-periodo>Período @(1 + periodos.indexOf(periodo))</nome-periodo>
-            @for(disciplina <- periodo.getDisciplines()){
-                <div class="disciplina" id="@disciplina.getName()">
-                    <nome>@disciplina.getName()</nome><br/>
-                    <descricao>@disciplina.getCredits() créditos</descricao>
+            @for(disciplina <- periodo.getDisciplinas()){
+                <div class="disciplina" id="@disciplina.getNome()">
+                    <nome>@disciplina.getNome()</nome><br/>
+                    <descricao>@disciplina.getCreditos() créditos</descricao>
                 </div>
             }
-            <h3> @periodo.getCredits() créditos </h3> <br>
-            @if(periodo.lessCreditsRequired()) {
+            <h3> @periodo.getCreditos() créditos </h3> <br>
+            @if(periodo.menorCreditosRequeridos()) {
                 Abaixo dos créditos mínimos.
             }
             </div>
@@ -80,11 +80,11 @@
         <div class="titulo">
             <nome-principal>DISCIPLINAS OFERTADAS</nome-principal>
         </div>
-        @for(disciplina <- Application.gradePlanning.getDisciplinasOfertadas()) {
-            @if(disciplina.getPeriod() == -1) {
-                <div class="disciplina float-left" id="@disciplina.getName()">
-                    <nome>@disciplina.getName()</nome><br/>
-                    <descricao>@disciplina.getCredits() créditos</descricao>
+        @for(disciplina <- Application.gradeDePlanejamento.getDisciplinasOfertadas()) {
+            @if(disciplina.getPeriodo() == -1) {
+                <div class="disciplina float-left" id="@disciplina.getNome()">
+                    <nome>@disciplina.getNome()</nome><br/>
+                    <descricao>@disciplina.getCreditos() créditos</descricao>
                 </div>
             }
         }

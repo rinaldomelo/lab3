@@ -3,57 +3,93 @@ package models;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * Classe que define um periodo
+ *
+ */
 
+//CREATOR: a classe Periodo guarda objetos do tipo Disciplina
 public class Periodo {
 	
-	public static final int MIN_CREDITS = 14;
+	public static final int MIN_CREDITOS = 14;
 	
-	private int periodID;
+	private int periodoID;
 	
-	List<Discipline> disciplines;
+	List<Disciplina> disciplinas;
 
-	public Periodo(int periodID) {
+	/**
+	 * Construtor
+	 * @param periodoID
+	 */
+	public Periodo(int periodoID) {
 	
-		this.periodID = periodID;
-		disciplines = new ArrayList<Discipline>();
+		this.periodoID = periodoID;
+		disciplinas = new ArrayList<Disciplina>();
 	}
 	
-	public List<Discipline> getDisciplines() {
+	/**
+	 * Retorna as disciplinas do periodo
+	 * @return disciplinas do periodo
+	 */
+	public List<Disciplina> getDisciplinas() {
 		
-		return disciplines;
+		return disciplinas;
 	}
 	
-	public boolean addDiscipline(Discipline disc) {
+	/**
+	 * Adiciona uma disciplina ao periodo e retorna se foi possivel
+	 * @param disc
+	 * @return se foi possivel adicionar
+	 */
+	public boolean adicionarDisciplina(Disciplina disc) {
 		
-		disc.choosePeriod(periodID);
+		disc.escolherPeriodo(periodoID);
 		
-		return disciplines.add(disc);
+		return disciplinas.add(disc);
 	}
 
-	public boolean removeDiscipline(Discipline disc) {
+	/**
+	 * Remove uma disciplina ao periodo e retorna se foi possivel
+	 * @param disc
+	 * @return se foi possivel remover
+	 */
+	public boolean removerDisciplina(Disciplina disc) {
 			
-		disc.removePeriod();
-		return disciplines.remove(disc);
+		disc.removerPeriodo();
+		return disciplinas.remove(disc);
 	}
 	
-	public boolean disciplineAvailable(Discipline disc) {
+	/**
+	 * Retorna se uma disciplina esta disponivel
+	 * @param disc
+	 * @return se uma disciplina esta disponivel
+	 */
+	public boolean disciplinaDisponivel(Disciplina disc) {
 	
-		return (disc.getPeriod() == Discipline.NO_PERIOD) && (getCredits() + disc.getCredits()) <= 28; 
+		return (disc.getPeriodo() == Disciplina.NO_PERIOD) && (getCreditos() + disc.getCreditos()) <= 28; 
 	}
 	
-	public int getCredits() {
+	/**
+	 * Retorna a quantidade de creditos total do periodo
+	 * @return quantidade de creditos total do periodo
+	 */
+	public int getCreditos() {
 		
-		int credits = 0;
+		int creditos = 0;
 		
-		for (Discipline disciplina : disciplines) {
-			credits += disciplina.getCredits();
+		for (Disciplina disciplina : disciplinas) {
+			creditos += disciplina.getCreditos();
 		}
 		
-		return credits;
+		return creditos;
 	}
 	
-	public boolean lessCreditsRequired() {
+	/**
+	 * Retorna a menor quantidade de creditos do periodo
+	 * @return menor quantidade de creditos do periodo
+	 */
+	public boolean menorCreditosRequeridos() {
 
-		return getCredits() < MIN_CREDITS;
+		return getCreditos() < MIN_CREDITOS;
 	}
 }
