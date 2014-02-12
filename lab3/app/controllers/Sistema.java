@@ -9,11 +9,12 @@ import models.Disciplina;
 import models.Periodo;
 
 /**
- * classe que realiza as fun��es do sistema, controla o sistema
+ * classe que realiza as funções do sistema, controla o sistema
  * 
  */
 
 // CONTROLER: SPD eh a classe responsavel por controlar o sistema
+// CREATOR: é responsavel por armazenar os periodos e cria o catalogo de disciplinas
 public class Sistema {
 
 	private CatalogoDeDisciplinas grade;

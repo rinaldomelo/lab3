@@ -12,9 +12,8 @@ import java.util.List;
  * 
  */
 
-// CREATOR: a classe será a respons�vel por criar as
-// disciplinas e guarda-las. Tambem respeita o information expert pois eh ela
-// que deve conter as informações para essa criação.
+// INFORMATION EXPERT: respeita o information expert pois eh ela
+// que deve conter as informações para a grade de disciplinas.
 
 public class CatalogoDeDisciplinas {
 

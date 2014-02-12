@@ -9,6 +9,7 @@ import java.util.List;
  */
 
 //CREATOR: a classe Periodo guarda objetos do tipo Disciplina
+//INFORMATION EXPERT: é responsavel pelas informações que o periodo deve ter.
 public class Periodo {
 	
 	public static final int MIN_CREDITOS = 14;
