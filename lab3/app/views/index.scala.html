@@ -59,16 +59,16 @@
         </div>
         @for((periodo, i) <- periodos.zipWithIndex) {
             <div id="periodo_@(i + 1)" class="coluna">
-            <nome-periodo>PerÃ­odo @(1 + periodos.indexOf(periodo))</nome-periodo>
+            <nome-periodo>Período @(1 + periodos.indexOf(periodo))</nome-periodo>
             @for(disciplina <- periodo.getDisciplinas()){
                 <div class="disciplina" id="@disciplina.getNome()">
                     <nome>@disciplina.getNome()</nome><br/>
-                    <descricao>@disciplina.getCreditos() crÃ©ditos</descricao>
+                    <descricao>@disciplina.getCreditos() créditos</descricao>
                 </div>
             }
-            <h3> @periodo.getCreditos() crÃ©ditos </h3> <br>
+            <h3> @periodo.getCreditos() créditos </h3> <br>
             @if(periodo.menorCreditosRequeridos()) {
-                Abaixo dos crÃ©ditos mÃ­nimos.
+                Abaixo dos créditos mínimos.
             }
             </div>
             
@@ -84,7 +84,7 @@
             @if(disciplina.getPeriodo() == -1) {
                 <div class="disciplina float-left" id="@disciplina.getNome()">
                     <nome>@disciplina.getNome()</nome><br/>
-                    <descricao>@disciplina.getCreditos() crÃ©ditos</descricao>
+                    <descricao>@disciplina.getCreditos() créditos</descricao>
                 </div>
             }
         }

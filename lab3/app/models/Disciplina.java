@@ -7,7 +7,7 @@ import java.util.List;
  * classe que representa uma disciplina
  */
 
-//Information Expert: Cada disciplina Ã© quem deve conhecer seus pre-requisitos.
+//Information Expert: Cada disciplina é quem deve conhecer seus pre-requisitos.
 public class Disciplina implements Comparable<Disciplina> {
 
 	public static int NO_PERIOD = -1;
