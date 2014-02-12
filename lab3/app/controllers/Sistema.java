@@ -9,7 +9,7 @@ import models.Disciplina;
 import models.Periodo;
 
 /**
- * classe que realiza as funÁıes do sistema, controla o sistema
+ * classe que realiza as funÔøΩÔøΩes do sistema, controla o sistema
  * 
  */
 
@@ -44,12 +44,12 @@ public class Sistema {
 			getPeriodos().add(periodo);
 		}
 
-		adicionarDisciplina("¡LGEBRA VETORIAL E GEOMETRIA ANALÕTICA", 0);
+		adicionarDisciplina("√ÅLGEBRA VETORIAL E GEOMETRIA ANAL√çTICA", 0);
 		adicionarDisciplina("CALCULO DIF E INTEGRAL I", 0);
-		adicionarDisciplina("INTRODU«√O A COMPUTA«√O", 0);
-		adicionarDisciplina("LABORAT”RIO DE PROGRAMA«√O I", 0);
+		adicionarDisciplina("INTRODU√á√ÉO A COMPUTA√á√ÉO", 0);
+		adicionarDisciplina("LABORAT√ìRIO DE PROGRAMA√á√ÉO I", 0);
 		adicionarDisciplina("LEITURA E PRODUCAO DE TEXTOS", 0);
-		adicionarDisciplina("PROGRAMA«√O I", 0);
+		adicionarDisciplina("PROGRAMA√á√ÉO I", 0);
 	}
 
 	/**

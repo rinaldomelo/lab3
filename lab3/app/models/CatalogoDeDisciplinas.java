@@ -12,9 +12,9 @@ import java.util.List;
  * 
  */
 
-// CREATOR: a classe será a responsável por criar as
+// CREATOR: a classe serÃ¡ a responsï¿½vel por criar as
 // disciplinas e guarda-las. Tambem respeita o information expert pois eh ela
-// que deve conter as informações para essa criação.
+// que deve conter as informaÃ§Ãµes para essa criaÃ§Ã£o.
 
 public class CatalogoDeDisciplinas {
 
