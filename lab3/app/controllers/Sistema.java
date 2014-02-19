@@ -40,7 +40,7 @@ public class Sistema {
 	 */
 	private void primeiroPeriodoPadrao() {
 
-		for (int i = 0; i < 8; i++) {
+		for (int i = 0; i < 12; i++) {
 			Periodo periodo = new Periodo(i);
 			getPeriodos().add(periodo);
 		}
