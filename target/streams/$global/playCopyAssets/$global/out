@@ -1,0 +1,22 @@
+[0m[[0mdebug[0m] [0mCopy play resource mappings: [0m
+[0m[[0mdebug[0m] [0m	(C:\Users\Leticia\git\lab3\lab3\public\fonts\glyphicons-halflings-regular.eot,C:\Users\Leticia\git\lab3\lab3\target\scala-2.10\classes\public\fonts\glyphicons-halflings-regular.eot)[0m
+[0m[[0mdebug[0m] [0m	(C:\Users\Leticia\git\lab3\lab3\public\fonts\glyphicons-halflings-regular.svg,C:\Users\Leticia\git\lab3\lab3\target\scala-2.10\classes\public\fonts\glyphicons-halflings-regular.svg)[0m
+[0m[[0mdebug[0m] [0m	(C:\Users\Leticia\git\lab3\lab3\public\fonts\glyphicons-halflings-regular.ttf,C:\Users\Leticia\git\lab3\lab3\target\scala-2.10\classes\public\fonts\glyphicons-halflings-regular.ttf)[0m
+[0m[[0mdebug[0m] [0m	(C:\Users\Leticia\git\lab3\lab3\public\fonts\glyphicons-halflings-regular.woff,C:\Users\Leticia\git\lab3\lab3\target\scala-2.10\classes\public\fonts\glyphicons-halflings-regular.woff)[0m
+[0m[[0mdebug[0m] [0m	(C:\Users\Leticia\git\lab3\lab3\public\images\favicon.png,C:\Users\Leticia\git\lab3\lab3\target\scala-2.10\classes\public\images\favicon.png)[0m
+[0m[[0mdebug[0m] [0m	(C:\Users\Leticia\git\lab3\lab3\public\images\gritter-light.png,C:\Users\Leticia\git\lab3\lab3\target\scala-2.10\classes\public\images\gritter-light.png)[0m
+[0m[[0mdebug[0m] [0m	(C:\Users\Leticia\git\lab3\lab3\public\images\gritter-long.png,C:\Users\Leticia\git\lab3\lab3\target\scala-2.10\classes\public\images\gritter-long.png)[0m
+[0m[[0mdebug[0m] [0m	(C:\Users\Leticia\git\lab3\lab3\public\images\gritter.png,C:\Users\Leticia\git\lab3\lab3\target\scala-2.10\classes\public\images\gritter.png)[0m
+[0m[[0mdebug[0m] [0m	(C:\Users\Leticia\git\lab3\lab3\public\images\ie-spacer.gif,C:\Users\Leticia\git\lab3\lab3\target\scala-2.10\classes\public\images\ie-spacer.gif)[0m
+[0m[[0mdebug[0m] [0m	(C:\Users\Leticia\git\lab3\lab3\public\javascripts\bootstrap.js,C:\Users\Leticia\git\lab3\lab3\target\scala-2.10\classes\public\javascripts\bootstrap.js)[0m
+[0m[[0mdebug[0m] [0m	(C:\Users\Leticia\git\lab3\lab3\public\javascripts\bootstrap.min.js,C:\Users\Leticia\git\lab3\lab3\target\scala-2.10\classes\public\javascripts\bootstrap.min.js)[0m
+[0m[[0mdebug[0m] [0m	(C:\Users\Leticia\git\lab3\lab3\public\javascripts\jquery-1.9.0.min.js,C:\Users\Leticia\git\lab3\lab3\target\scala-2.10\classes\public\javascripts\jquery-1.9.0.min.js)[0m
+[0m[[0mdebug[0m] [0m	(C:\Users\Leticia\git\lab3\lab3\public\javascripts\jquery-ui-1.10.3.custom.js,C:\Users\Leticia\git\lab3\lab3\target\scala-2.10\classes\public\javascripts\jquery-ui-1.10.3.custom.js)[0m
+[0m[[0mdebug[0m] [0m	(C:\Users\Leticia\git\lab3\lab3\public\javascripts\jquery-ui-1.10.3.custom.min.js,C:\Users\Leticia\git\lab3\lab3\target\scala-2.10\classes\public\javascripts\jquery-ui-1.10.3.custom.min.js)[0m
+[0m[[0mdebug[0m] [0m	(C:\Users\Leticia\git\lab3\lab3\public\javascripts\jquery.gritter.min.js,C:\Users\Leticia\git\lab3\lab3\target\scala-2.10\classes\public\javascripts\jquery.gritter.min.js)[0m
+[0m[[0mdebug[0m] [0m	(C:\Users\Leticia\git\lab3\lab3\public\stylesheets\bootstrap-theme.css,C:\Users\Leticia\git\lab3\lab3\target\scala-2.10\classes\public\stylesheets\bootstrap-theme.css)[0m
+[0m[[0mdebug[0m] [0m	(C:\Users\Leticia\git\lab3\lab3\public\stylesheets\bootstrap-theme.min.css,C:\Users\Leticia\git\lab3\lab3\target\scala-2.10\classes\public\stylesheets\bootstrap-theme.min.css)[0m
+[0m[[0mdebug[0m] [0m	(C:\Users\Leticia\git\lab3\lab3\public\stylesheets\bootstrap.css,C:\Users\Leticia\git\lab3\lab3\target\scala-2.10\classes\public\stylesheets\bootstrap.css)[0m
+[0m[[0mdebug[0m] [0m	(C:\Users\Leticia\git\lab3\lab3\public\stylesheets\bootstrap.min.css,C:\Users\Leticia\git\lab3\lab3\target\scala-2.10\classes\public\stylesheets\bootstrap.min.css)[0m
+[0m[[0mdebug[0m] [0m	(C:\Users\Leticia\git\lab3\lab3\public\stylesheets\jquery.gritter.css,C:\Users\Leticia\git\lab3\lab3\target\scala-2.10\classes\public\stylesheets\jquery.gritter.css)[0m
+[0m[[0mdebug[0m] [0m	(C:\Users\Leticia\git\lab3\lab3\public\stylesheets\main.css,C:\Users\Leticia\git\lab3\lab3\target\scala-2.10\classes\public\stylesheets\main.css)[0m
